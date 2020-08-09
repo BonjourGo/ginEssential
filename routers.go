@@ -6,6 +6,7 @@ import (
 )
 
 func GetRouter(r *gin.Engine) *gin.Engine {
-	r.POST("/register", controller.Resgister)
+	r.POST("/register", controller.Register)
+	r.POST("/login", controller.Login)
 	return r
 }
